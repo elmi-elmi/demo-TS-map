@@ -6,7 +6,8 @@ export class Company {
     location:{
         lat:number;
         lng:number;
-    }
+    };
+    color:'blue';
 
     constructor() {
         this.companyName = faker.company.companyName();
@@ -16,5 +17,14 @@ export class Company {
             lng:parseFloat(faker.address.longitude())
         }
 
+    }
+
+    markerContent():string{
+        return `
+        <div>
+           <h1> User name: ${this.companyName}</h1>
+           <h3>${this.companyPhrase}</h3>
+        </div>
+        `
     }
 }
