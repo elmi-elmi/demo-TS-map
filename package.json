@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+
+  },
   "devDependencies": {
     "@faker-js/faker": "^6.0.0-alpha.6",
     "@types/google.maps": "^3.47.4",
